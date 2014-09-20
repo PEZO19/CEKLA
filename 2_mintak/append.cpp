@@ -4,8 +4,7 @@ list append(const list L1, const list L2)
 {
   if (L1 == nil) return L2;
 
-  return cons(hd(L1), 
-	      append(tl(L1), L2)); 
+  return cons(hd(L1), append(tl(L1), L2)); 
 }
 
 
