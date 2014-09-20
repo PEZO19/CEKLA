@@ -27,6 +27,10 @@ int horner(const int Digit, const int Acc) {
     return Acc * 10 + Digit;
 }
 
+// PEZ0: Figyeljük meg, hogy horner/2 fv.-ben ugyanazon a 
+// helyen kell lennie az Acc-nak, mint a foldr-ben, azaz 
+// jelen esetben a 2. helyen
+
 // hajtogatás balról, Erlang stílusban
 // foldl(F, a, [x1,...,xn]) = F(xn, ..., F(x1, a)...)
 int foldl(const fun2 F, const int A, const list L) {   

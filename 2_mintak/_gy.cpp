@@ -1,6 +1,6 @@
 
 // 3. feladat
-int lnko(const int A, const int B){
+int lnko(const int A, const int B, const int B1){
 	if(A > B1)
 		return lnko(A,B,B1);
 	else
@@ -24,7 +24,7 @@ int lnko2(const int A, const int B){
 	Lista hossza - jobbrekurziv */
 
 // Segedfv. - 'egyfajt inicializalo szerepet jatszik, megfelelo "formara" hozza a parameterlistat'.
-length(list L, const int DB){
+int length(list L, const int DB){
 	if (L == nil) return DB;
 	else return length(tl(L),DB+1);
 
@@ -46,27 +46,27 @@ list lista_noveltje(const list L){
 	Beszuras listaba adott helyre	*/
 
 list insert_nth(const list L,const int N,const int E){
-
-
 	if(N == 0) return cons(E, L);
-	else return cons(hd(L), insert_nth(tl(L), N-1, E);
+	else return cons(hd(L), insert_nth(tl(L), N-1, E));
 }
 
 /* 10. feladat 
 	Lista adott hosszusagu prefixuma */
 
-list take(list L, H){}
+list take(list L, int H){
+
+}
 
 
 /* 14. feladat */
 int inc(const int I){
-	return I+1
+	return I+1;
 }
 
 list map(fun1 f, list L){
 	//TODO
 	if(L==nil) return L;
-	else return cons(f())
+	else return cons(f());
 }
 
 /* 15. feladat */
@@ -76,11 +76,11 @@ int add(const int A, const int B){
 
 int foldl(fun2 f, const int Acc, const list L){
 	if(L == nil) return Acc;
-	else return foldl(f, f(Acc, hd(L)), tl(L))
+	else return foldl(f, f(Acc, hd(L)), tl(L));
 }
 
 int sum(list L){
-	return foldl(add, 0, L)
+	return foldl(add, 0, L);
 }
 
 

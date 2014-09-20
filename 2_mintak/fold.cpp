@@ -45,15 +45,15 @@ int ymx(const int X, const int Y) { return Y-X; }
 
 int main(){
   list L = cons(1,cons(5,cons(3,cons(8,nil))));
-  write("Erlang: foldl(xmy, 0, L) =   (8-(3-(5-(1-0)))) = ");
+  write("Erlang:  foldl (xmy, 0, L)  = (8-(3-(5-(1-0)))) = ");
          writeln(foldl(xmy, 0, L));
-  write("Haskell: foldlH(xmy, 0, L) = ((((0-1)-5)-3)-8) = ");
+  write("Haskell: foldlH(xmy, 0, L)  =         ((((0-1)-5)-3)-8) = ");
          writeln(foldlH(xmy, 0, L));
-  write("Erlang: foldl(ymx, 0, L) =   ((((0-1)-5)-3)-8) = ");
+  write("Erlang:  foldl (ymx, 0, L)  =         ((((0-1)-5)-3)-8) = ");
          writeln(foldl(ymx, 0, L));
-  write("Haskell: foldlH(ymx, 0, L) = (8-(3-(5-(1-0)))) = ");
+  write("Haskell: foldlH(ymx, 0, L)  = (8-(3-(5-(1-0)))) = ");
          writeln(foldlH(ymx, 0, L));
-  write("foldr(xmy, 0, L) =           (1-(5-(3-(8-0)))) = ");
+  write("         foldr (xmy, 0, L)  = (1-(5-(3-(8-0)))) = ");
   writeln(foldr(xmy, 0, L));
 }
 
