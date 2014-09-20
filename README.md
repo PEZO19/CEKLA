@@ -1,4 +1,4 @@
 CEKLA
 =====
 
-Budapest Technical University - Semester 7 - Deklarative Programming - C++ based functional language Homeworks
+Budapest Technical University - Semester 7 - Declarative Programming - C++ based functional language Homeworks
